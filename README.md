@@ -1,5 +1,11 @@
 # javascript-learning
-### Lession 5: Javascript 中的内置对象（built-in object）
+### Lession 1: Javascript 语法
+* 4种内置对象
+### Lession 2: Javascript 流程控制语句
+* 4种内置对象
+### Lession 3: Javascript 函数
+* 4种内置对象
+### Lession 4: Javascript 中的内置对象（built-in object）
 * 4种内置对象
   * 1 Array 数组
   * 2 String 字符串
@@ -9,6 +15,8 @@
   * 如何创建数组？ 创建数组的基本方式有两种：1 使用Array构造函数 -> 语法： new Array（3）； new Array（1，3，6，9）-> [1, 3, 6, 9]
   * 2 使用数组字面量表示法 -> let colors = [6, 'yellow', true, {email:"123@gmail.com}] ; console.log(colors) -> [6, 'yellow', true, Object]
   * 索引： array[3]; 赋值： array[3] = 'orange';
+### Lession 5: 错误调试与处理
+* 4种内置对象
 ### Lession 6: 初识Javascript中的DOM
 * javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
 * DOM 是 Document Object Model（文档对象模型）的缩写： 文档对象模型（DOM）是Html 和 XML文档的编程接口， 它提供了对文档的结构化的表述，并定义了一种方式可以使从程序中对该结构进行访问，从而改变文档的结构，样式和内容.
@@ -43,6 +51,19 @@
   * 语法：ele.removeAttribute("attribute")
   * 功能： 删除ele上的attribute属性
   * 说明： 1 ele是要操作的dom对象； 2 attribute 是要删除的html属性；
+### Lession 7: Javascript中的DOM事件
+* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+### Lession 8: Javascript中的BOM基础
+* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+### Lession 9: Javascript中的DOM操作
+* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+### Lession 10: Javascript中的DOM属性
+* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+### Lession 11: Javascript中的事件
+* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+### Lession 12: 项目：Javascript实现轮播图特效
+* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+
   
 
   
