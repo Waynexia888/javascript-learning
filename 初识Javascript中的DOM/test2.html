@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text" class="text" align="center" data-type="title">文本</p>
+    <input type="text" name="user" value="user" id="user" validate="true">
+    <script>
+        let p = document.getElementById("text");
+        // console.log(p.className) 不能写p.class
+        console.log(p.getAttribute("class")) // = p.className
+
+        let user = document.getElementById("user")
+        console.log(user.id)
+        console.log(user.validate); // undefined
+        console.log(user.getAttribute("validate"));
+        // 给p设置一个data-color的属性
+        p.setAttribute("data-color", "red");
+        //给input设置一个isRead的属性
+        user.setAttribute("isRead","false")
+        //删除p上的align属性
+        p.removeAttribute("align");
+    </script>
+</body>
+</html>

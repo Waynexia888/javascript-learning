@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .on{border-bottom: 1px solid #0f0;}
+        .current{background: #ccc; color: #f00;}
+    </style>
+</head>
+<body>
+    <div class="box" id="box">元素</div>
+    <ul id="list1">
+        <li><i>前端开发</i></li>
+        <li class="on"><b>服务器端开发</b></li>
+        <li>ui 设计</li>
+        <li>ucla 设计</li>
+        <li>ucsd 设计</li>
+    </ul>
+    <ol>
+        <li>javascript原生</li>
+        <li>javascript框架</li>
+    </ol>
+    <script>
+        //获取id为box的这个元素
+        let box = document.getElementById("box")
+        // 设置id为box的这个元素的文字颜色
+        box.style.color = '#f00';
+        // 当属性是减号连接的符合形式时，必须要转换成驼峰形式， 例如：font-weight
+        box.style.fontWeight = 'bold';
+        //获取页面中所有的li
+        let lis = document.getElementsByTagName("li"); // 返回的是一个数组
+        console.log(lis.length);
+        //获取id为list1下的所有的li
+        let lis2 = document.getElementById("list1").getElementsByTagName("li");
+        console.log(lis2.length);
+        //遍历每一个li
+        for (let i = 0; i < lis2.length; i++) {
+            // console.log(lis2)
+            // lis2[i].style.color = '#00f';
+            // if (i == 0) {
+            //     lis2[i].style.backgroundColor = "#ccc";
+            // } else if (i == 1) {
+            //     lis2[i].style.backgroundColor = "#666";
+            // } else if (i == 2) {
+            //     lis2[i].style.backgroundColor = "#999";
+            // } else {
+            //     lis2[i].style.backgroundColor = "#333";
+            // }
+
+            console.log(lis2[i].innerHTML);
+            lis2[i].innerHTML += "程序";
+            // ele.className是重新设置类，替换元素本身的class
+            lis2[1].className = "current";
+            console.log(document.getElementById("box").className);
+        }
+    </script>
+</body>
+</html>
