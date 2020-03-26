@@ -20,6 +20,8 @@
 ### Lession 6: 初识Javascript中的DOM
 * javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
 * DOM 是 Document Object Model（文档对象模型）的缩写： 文档对象模型（DOM）是Html 和 XML文档的编程接口， 它提供了对文档的结构化的表述，并定义了一种方式可以使从程序中对该结构进行访问，从而改变文档的结构，样式和内容.
+  * DOM，the document object model, which represents the contents of the page. You can manipulate it using javascript.
+  * The BOM (Browser Object Model) consists of the objects navigator , history , screen , location and document which are children of window.
 * 基本的DOM查找方法：
   * 1 语法：document.getElementById("id"); 功能：返回对拥有指定ID的第一个对象的引用； 返回值：DOM对象； 说明：id为DOM元素上id属性的值
   * 2 语法：document.getElementsByTagName("tag"); 功能：返回一个对所有tag标签引用的集合； 返回值：数组； 说明：tag为要获取的标签名称
