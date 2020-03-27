@@ -54,7 +54,34 @@
   * 功能： 删除ele上的attribute属性
   * 说明： 1 ele是要操作的dom对象； 2 attribute 是要删除的html属性；
 ### Lession 7: Javascript中的DOM事件
-* javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
+* 学习目标：
+  * 1 掌握什么是事件： 事件就是文档或浏览器窗口中发生的一些特定的交互瞬间
+  * 2 掌握HTML事件 (这是第一种绑定事件的方法）
+  * 3 掌握DOM 0级事件  (这是第二种绑定事件的方法）
+  * 4 掌握常用的鼠标与键盘事件
+  * 5 掌握this的指向
+* HTML事件：直接在HTML元素标签内添加事件，执行脚本
+  * 语法： <tag 事件= “执行脚本” ></tag>
+  * 功能： 在HTML元素上绑定事件
+  * 说明： 执行脚本可以是一个函数的调用
+* 鼠标事件：
+  * onload: 页面加载时触发， 作用在window对象上的
+  * unload: 页面卸载时触发， 作用在window对象上的
+  * onclick： 鼠标点击时触发
+  * onmouseover： 鼠标滑过时触发
+  * onmouseout： 鼠标离开时触发
+  * onfoucs： 获得焦点时触发, 用于 1 input标签type为text，password； 2 textarea标签
+  * onblur： 失去焦点时触发
+  * onchange: 域的内容改变时发生
+* 关于this指向：
+  * 在事件触发的函数中，this是对该DOM对象的引用
+* DOM 0级事件
+  * 1 通过DOM获取HTML元素
+  * 2 （获取HTML元素).事件 = 执行脚本
+* 不建议使用HTML事件原因：
+  * 1 多元素绑定相同事件时，效率低
+  * 2 不建议在HTML元素中写javascript代码
+  
 ### Lession 8: Javascript中的BOM基础
 * javascript的组成： 完整的javascript是由ECMAScript(语法), Browser Objects(DOM, BOM)(特性)组成的
 ### Lession 9: Javascript中的DOM操作
