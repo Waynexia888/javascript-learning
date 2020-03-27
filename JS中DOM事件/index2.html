@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lock {
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+            background: #00f;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .unlock {
+            width: 140px;
+            height: 30px;
+            line-height: 30px;
+            background: #666;
+            color: #ccc;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lock" id="btn">锁定</div>
+    <script>
+        //获取按钮
+        let btn = document.getElementById("btn");
+        //给按钮绑定事件, this是对该DOM对象的引用
+        btn.onclick = function() {
+            // console.log(this); 这里this指向div，即对该DOM对象的引用
+            // 判断如果按钮是锁定，则显示为解锁，变为灰色，否则显示为锁定，变为蓝色
+            // if (this.className == "lock") {
+            //     this.className = "unlock";
+            //     this.innerHTML = "解锁";
+            // } else {
+            //     this.className = "lock";
+            //     this.innerHTML = "锁定";
+            // }
+
+            if (this.innerHTML == "锁定") {
+                this.innerHTML = "解锁";
+                this.className = "unlock";
+            } else {
+                this.innerHTML = "锁定";
+                this.className = "lock";
+            }
+        }
+
+        // 点击按钮调用clickBtn这个函数
+        // const clickBtn = () => {
+        //     alert("我是按钮")
+        // }
+
+        // btn.onclick = clickBtn; //这里不能写clickBtn（）， 否则这个函数一开始就被执行了
+    </script>
+   
+</body>
+</html>
