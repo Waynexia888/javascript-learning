@@ -140,3 +140,39 @@ console.log({...obj1, ...obj2, date: "2020"})
 // 注意，name: 'imooc' 被 name: 'woniu' 覆盖了
 
 // ------------------------------------------------------------
+
+// 解构赋值： 函数也可以多返回值了
+// - 数组解构
+// - 对象解构
+
+const arr = ['hello', 'imooc']
+
+// let arg1 = arr[0]
+// let arg2 = arr[1]
+let [arg1, arg2] = arr      // 批量赋值
+console.log(arg1, '|', arg2)   // "hello" | "imooc"
+
+const obj = { name: 'imooc', course: 'react' }
+const { name, course } = obj     // 解构赋值
+console.log(name, '|', course) // "imooc" | "react"
+
+// ------------------------------------------------------------
+
+// 类， 提供class的语法糖：
+// - 是prototype的语法糖
+// - extends继承
+// - constructor构造函数
+
+class MyApp{
+    constructor() {
+        this.name = "imooc"
+    }
+    sayHello(){
+        console.log(`hello ${this.name} !`)
+    }
+}
+const app = new MyApp()
+app.sayHello()  // hello imooc !
+
+// ------------------------------------------------------------
+
