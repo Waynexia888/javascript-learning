@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setInterval(function() {
+        //     console.log("您好");
+        // }, 1000)
+
+        // const intervalId = setInterval(() => {
+        //     console.log("您好");
+        // }, 1000)
+        // // 10秒后停止打印
+        // setTimeout(() => {
+        //     clearInterval(intervalId);
+        // }, 10000);
+        
+        let num = 1
+        let max = 10
+        let timer = null
+        // // 每隔1秒钟num递增一次，直到num的值等于max清除
+        // timer = setInterval(() => {
+        //     console.log(num);
+        //     num++;
+        //     if(num > max) {
+        //         clearInterval(timer);
+        //     }
+        // }, 1000);
+
+        // 使用超时调用实现
+        const incrementNum = () => {
+            console.log(num)
+            num++;
+            if(num <= max){
+               setTimeout(incrementNum, 1000);
+            } else {
+                clearTimeout(timer);
+            }     
+        }
+        timer = setTimeout(incrementNum, 1000)
+
+    </script>
+</body>
+</html>

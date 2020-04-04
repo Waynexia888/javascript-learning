@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open</title>
+</head>
+<body>
+    <input type="button" value="退出" id="quit">
+    <script>
+        window.onload = function() {
+            //打开子窗口，显示new_window.html
+            // width: 窗口宽度； height：窗口高度；
+            // left: 窗口x轴坐标； top: 窗口y轴坐标；
+            // toolbar：是否显示浏览器的工具栏
+            // menubar： 是否显示菜单栏
+            //scrollbars：是否显示滚动条
+            // location： 是否显示地址字段
+            // status： 是否添加状态栏
+            window.open("new_window.html", "newwindow", 
+            "width=400, height=200, left=0, top=0, toolbar=no, menubar=no, scrollbars=no, location=no, status=no");
+            const quit = document.getElementById("quit");
+            //点击关闭当前窗口
+            quit.onclick = function(){
+                window.close();
+            }
+        }
+    </script>
+</body>
+</html>

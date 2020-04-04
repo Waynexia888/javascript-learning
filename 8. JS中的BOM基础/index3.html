@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // window可以省略掉
+        // window.setTimeout("alert('hello')", 3000) // 这样写效率不高
+        // 这是匿名函数
+        const timeout1 = setTimeout(function() {
+            alert("hello");
+        }, 2000)
+        // 这是自定义函数
+        const fnCall = function() {
+            alert('world');
+        }
+        setTimeout(fnCall, 5000);
+        // setTimeout方法返回一个id值， 通过它取消超时调用
+        clearTimeout(timeout1);
+    </script>
+</body>
+</html>
