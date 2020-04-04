@@ -176,3 +176,44 @@ app.sayHello()  // hello imooc !
 
 // ------------------------------------------------------------
 
+// ES6中新出现的数据结构：
+// - Set， 元素不可重合
+// - Map
+// - Symbol
+
+// ------------------------------------------------------------
+
+// 模块化： ES6中自带的模块化机制，告别sea.js 和 require.js
+// - import, import{}
+// - export, export default
+// - Node 现在还不支持， 还需要用require来加载文件】
+
+// 例如：
+// 在module1.js 文件里： export const name = 'imooc123'
+//                     export function sayHello(){
+//                         console.log('imooc rocks!')
+//                     }
+
+// 在es6.js 文件里： import { name, sayHello } from './module1'
+//                 console.log(name)   // 'imooc123'
+//                 sayHello()         // 'imooc rocks!'
+//                 import * as mod1 from './module1'    // * 代表所有的模块
+
+// ------------------------------------------------------------
+
+// 其他：还有一些特性，虽然不在ES6的范围， 但是也被babel支持， 普遍被大家接受和使用（需要安装插件）
+// - 对象扩展符， 函数绑定
+// - 装饰器
+// - Async await
+
+// 其支持对象扩展符和装饰器
+// - Babel-plugin-transform-object-rest-spread插件，支持扩展符号
+// - 装饰器
+// - Async await
+
+// ES6其他特性
+// - Promise
+// - 迭代器和生成器
+// - 代理Proxy
+
+
