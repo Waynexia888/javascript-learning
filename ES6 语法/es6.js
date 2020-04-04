@@ -216,4 +216,50 @@ app.sayHello()  // hello imooc !
 // - 迭代器和生成器
 // - 代理Proxy
 
+// ------------------------------------------------------------
+
+// 数组的操作
+
+arr = [1, 2, 3]
+console.log(arr.map(function(v){      // 这是旧的写法
+    return v * 2
+}))
+
+console.log(arr.map((v) => v * 2))    //ES6 新的写法， [2, 4, 6]
+
+// 遍历数组
+[1, 2, 3].forEach((value, index) => {
+    console.log(value);
+});
+
+//映射新数组
+arr = [1, 2, 3].map((v) => v * 2);
+
+// 所有元素是否通过测试
+[1, 2, 3, 4].every((v) => v > 3)    // return true or false
+
+// 是否有元素通过测试
+[1, 2, 3, 4].some((v) => v > 3)    // return true or false
+
+//过滤数组
+[1, 2, 3, 4, 5].filter((v) => v > 3) // 返回的是一个数组，数组里面是所有满足条件的
+
+// 查找符合条件的元素：
+arr = [{name: 'dasheng', age: 18}, {name: 'rmos', age: 1}]
+
+// 查找索引
+[1, 2, 3].indexOf(2);   // 1, 返回的是一个index
+
+//连接数组
+let arr1 = [1, 2, 3]
+let arr2 = [4, 5, 6]
+newArr = [...arr1, ...arr2]  // [1, 2, 3, 4, 5, 6]
+
+// 数组去重
+let arr = [1, 2, 3, 4, 3, 2, 1]
+newArr = [...new Set(arr)]  // [1, 2, 3, 4]
+
+// 获取列表的头head 和 尾 last
+const [head, ...tail] = [1, 2, 3]
+const [last, ...initial] = [1, 2, 3].reverse()
 
