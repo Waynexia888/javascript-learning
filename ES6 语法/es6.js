@@ -81,5 +81,62 @@ setTimeout(() => {
     console.log('xxx')              // ES6
 }, 1000)
 
+// ------------------------------------------------------------
+
+// 对象扩展： Object 扩展
+// - Object.keys, Object.values, Object.entries 
+// - 对象方法简写，计算属性
+// - 展开运算符（不是ES6标准， 但是babel也支持）
+
+const onj = {name: 'imooc', course: 'react开发app'}
+console.log(Object.keys(obj))  // ["name", "course"]
+console.log(Object.values(obj))  // ["imooc", "react开发app"]
+console.log(Object.entries(obj)) // [["name", "imooc"], ["course", "react开发app"]]
+
+const name = 'imooc'
+const obj = {}
+obj[name] = 'hello imooc'
+console.log(obj)   // {imooc: "hello imooc"}
+
+// ----------------------------------------
+
+const name = 'imooc'
+const obj = {
+    name: "hello1"
+}
+obj[name] = 'hello imooc'
+console.log(obj)   // {name: "hello1", imooc: "hello imooc"}
+
+// ----------------------------------------
+
+const name = 'imooc'
+const obj = {
+    [name]: "hello1"     //计算属性
+}
+console.log(obj)   // {imooc: "hello1"}
+
+// ----------------------------------------
+
+const name = 'imooc'
+const obj = {
+    name,                // 相当于： name：name
+    [name]: "hello1",    //计算属性
+    hello2: function(){    // 这里function可以省略， 
+        console.log("123")
+    },
+    hello3(){               // hello3 是 hello2 的一个简写
+        console.log("123")
+    }
+
+}
+console.log(obj)   // {name: "imooc", imooc: "hello1", hello2: f, hello3: f}
+
+// ----------------------------------------
+
+const obj1 = {name: 'imooc', course: 'react'}
+const obj2 = {type: 'it', name: 'woniu'}
+console.log({...obj1, ...obj2, date: "2020"}) 
+// {name: 'woniu', course: 'react', type: 'it', date: '2020'}
+// 注意，name: 'imooc' 被 name: 'woniu' 覆盖了
 
 // ------------------------------------------------------------
