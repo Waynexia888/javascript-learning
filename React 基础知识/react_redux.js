@@ -74,3 +74,9 @@ export function counter(state=0, action) {
 // - Provider组件在应用最外层，传入store即可，只用一次
 // - Connect 负责从外部获取组件需要的参数
 // - Connect 可以用装饰器的方式来写
+
+//使用装饰器优化connect代码：（video 4.7）
+// - npm run eject弹出个性化配置
+// - npm install babel-plugin-transform-decorators-legacy插件
+// - package.json 里babel加上plugins配置
+// - 新版本参考： https://github.com/facebook/react-native/issues/21320
