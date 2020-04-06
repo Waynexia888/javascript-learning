@@ -15,5 +15,12 @@
 // - Link跳转专用 ->点击跳到指定路由
 // - exact表明完全匹配
 
+//其他组件：
+// - url参数，Route组件参数可用冒号标识参数
+// - Redirect组件 -> 页面一刷新，直接跳转到指定路径
+// - Switch只渲染命中的第一个Route组件
+
+// - this.props.history.push('/'); //直接跳转到'/'路径
+// - <Redirect to='/'></Redirect>
 
 
