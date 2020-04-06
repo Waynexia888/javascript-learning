@@ -62,7 +62,7 @@ export default App;
 //-------------------------------------------------------------------
 // antd-mobile UI 组件库：
 // - https: //mobile.ant.design/docs/react/introduce
-// - 使用 npm install antd - mobile--save 安装最新版
+// - 使用 npm install antd-mobile --save 安装最新版
 
 
 
