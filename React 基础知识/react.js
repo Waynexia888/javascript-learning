@@ -52,6 +52,18 @@ export default App;
 // - this引用的问题，需要在构造函数里用bind绑定this
 // - this.setState修改state，记得返回新的state，而不是修改
 
+//-------------------------------------------------------------------
+// React生命周期： 
+// React组件有若干个钩子函数，在组件不同的状态执行
+// - 初始化周期
+// - 组件重新渲染生命周期
+// - 组件卸载生命周期
+
+//-------------------------------------------------------------------
+// antd-mobile UI 组件库：
+// - https: //mobile.ant.design/docs/react/introduce
+// - 使用 npm install antd - mobile--save 安装最新版
+
 
 
 
