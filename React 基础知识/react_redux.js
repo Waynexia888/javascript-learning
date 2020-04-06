@@ -57,4 +57,20 @@ export function counter(state=0, action) {
 // - 使用applyMiddleware开启thunk中间件
 // - action可以返回函数，使用dispatch提交action
 
+//----------------------------------------------------------
+// 调试工具：chrome搜索redux安装
+// - 新建store的时候判断window.__REDUX_DEVTOOLS_EXTENSION__
+// - 使用compose结合thunk和window.__REDUX_DEVTOOLS_EXTENSION__
+// - 调试窗的redux选项卡，实时看到state
 
+//----------------------------------------------------------
+
+// 使用react-redux：
+// - npm install react-redux --save
+// - 忘记subscribe， 记住reducer， action 和 dispatch即可
+// - react-redux 提供Provider 和 connect两个接口来连接
+
+// react-redux具体使用：
+// - Provider组件在应用最外层，传入store即可，只用一次
+// - Connect 负责从外部获取组件需要的参数
+// - Connect 可以用装饰器的方式来写
