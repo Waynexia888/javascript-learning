@@ -1,0 +1,48 @@
+/* CSS 的5种基本选择器：
+1. 元素选择器 */
+h1 {
+    color: #c9394a;
+}
+
+/* 2. 类选择器 */
+
+.myDiv {
+    color: #c9394a;
+}
+
+/* 3. ID选择器 */
+ #myId {
+     color: #c9394a;
+ }
+
+ /* 4. 属性选择器 */
+
+ [name="imooc"] {
+     color: #c9394a;
+ }
+
+ /* 5. 通配符选择器 */
+
+ * {
+     color: #c9394a;
+ }
+
+ /* CSS的字体属性：
+ - font-family属性
+ - font-size属性
+ - font-weight属性 */
+
+ h1 {
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ /* CSS的文本阴影部分
+ - text-shadow属性: 水平偏移量 垂直偏移量 模糊半径 颜色;
+ - 模糊半径如果没有指定数值，则默认为0，值越大，模糊半径越大，阴影也就越大越淡
+ - 阴影颜色，
+ - -1px：水平偏移量， 负号代表向左偏移，正号向右
+ - -3px：垂直偏移量，负号代表向上偏移， 正号向下 */
+
+ h1 {
+     text-shadow: #f03740 -1px -3px;
+ }
