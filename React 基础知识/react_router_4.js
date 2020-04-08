@@ -23,4 +23,9 @@
 // - this.props.history.push('/'); //直接跳转到'/'路径
 // - <Redirect to='/'></Redirect>
 
+// 和redux配合：
+// - 复杂redux应用， 多个reducer， 用combineReducer合并
+// - Redirect组件跳转
+// - Switch只渲染一个子Route组件
+
 
