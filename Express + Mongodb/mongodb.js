@@ -21,7 +21,7 @@
 //-------------------------------------------------------------------
 
 // Express + mongodb实战: 增删改查
-// - mongod --config/usr/local/etc/mongod.conf后台启动
+// - mongod --config /usr/local/etc/mongod.conf --fork后台启动
 // - Express结合mongodb
 // - 封装mongoose
 
