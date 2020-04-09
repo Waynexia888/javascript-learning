@@ -115,3 +115,41 @@ h1 {
     line-height: 20px;
     text-decoration: none;
 }
+
+/* ------------------------------------------------------------ */
+/* 块级元素：
+- 块级元素显示会独占一行， 例如<h1> ~ <h6>
+
+内联元素：
+- 内联元素又称行内元素， 多个内联元素处在一行中，例如<a>
+
+行内块级元素：
+- 行内块级元素显示会与其他相邻元素出现在同一行中，
+  并且两个相邻元素之间存在空白空间，例如，<button> */
+
+  /* CSS的display属性：
+  - CSS提供的display属性可以设置任意标签为块级，内联或者行内块级元素
+  - 值为block的话，表示当前标签是块级元素
+  - 值为inline的话，表示当前标签是内联元素
+  - 值为inline-block的话，表示当前标签是行内块级元素 */
+
+  /* 什么是背景图片： background-image
+  - 所谓背景图片就是引入一张外部图片作为某个标签的背景
+  - background-image属性用于元素设置一个或者多个背景图像 */
+
+  /* background-repeat 属性：
+  - background-repeat属性定义背景图像的平铺方式
+  - background-repeat属性的值 no-repeat决定图像不会被重复 */
+
+  /* background-position属性：
+  - background-position属性用于设置背景图像显示的初始位置 */
+
+  /* background-size 属性：
+  - background-size 属性用于设置背景图像显示的大小 */
+
+    h1 {
+        background-image: url("imooc-logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 180px;
+    }
