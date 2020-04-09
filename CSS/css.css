@@ -127,29 +127,82 @@ h1 {
 - 行内块级元素显示会与其他相邻元素出现在同一行中，
   并且两个相邻元素之间存在空白空间，例如，<button> */
 
-  /* CSS的display属性：
-  - CSS提供的display属性可以设置任意标签为块级，内联或者行内块级元素
-  - 值为block的话，表示当前标签是块级元素
-  - 值为inline的话，表示当前标签是内联元素
-  - 值为inline-block的话，表示当前标签是行内块级元素 */
+/* CSS的display属性：
+- CSS提供的display属性可以设置任意标签为块级，内联或者行内块级元素
+- 值为block的话，表示当前标签是块级元素
+- 值为inline的话，表示当前标签是内联元素
+- 值为inline-block的话，表示当前标签是行内块级元素 */
 
-  /* 什么是背景图片： background-image
-  - 所谓背景图片就是引入一张外部图片作为某个标签的背景
-  - background-image属性用于元素设置一个或者多个背景图像 */
+/* 什么是背景图片： background-image
+- 所谓背景图片就是引入一张外部图片作为某个标签的背景
+- background-image属性用于元素设置一个或者多个背景图像 */
 
-  /* background-repeat 属性：
-  - background-repeat属性定义背景图像的平铺方式
-  - background-repeat属性的值 no-repeat决定图像不会被重复 */
+/* background-repeat 属性：
+- background-repeat属性定义背景图像的平铺方式
+- background-repeat属性的值 no-repeat决定图像不会被重复 */
 
-  /* background-position属性：
-  - background-position属性用于设置背景图像显示的初始位置 */
+/* background-position属性：
+- background-position属性用于设置背景图像显示的初始位置 */
 
-  /* background-size 属性：
-  - background-size 属性用于设置背景图像显示的大小 */
+/* background-size 属性：
+- background-size 属性用于设置背景图像显示的大小 */
 
-    h1 {
-        background-image: url("imooc-logo.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 180px;
-    }
+h1 {
+    background-image: url("imooc-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px;
+}
+
+/* 什么是定位？
+- 定位就是定义网页标签在运行时显示的位置
+- CSS提供position属性用于指定元素在网页中定位的方式
+
+定位属性
+- position：static；静态定位，不开启定位（没有定位）， 默认值
+- position： fixed；固定定位（开启定位）
+- position：relative； 相对定位（开启定位）
+- position： absolute； 绝对定位（开启定位）
+
+定位中的偏移量：
+- position属性仅仅只是指定元素的定位方式，而top，right， bottom
+和left这四个属性则决定了该元素的最终位置 */
+
+/* CSS的相对定位：
+- 相对定位是相对于标签原来的位置进行的定位
+- position属性的值设置为relative， 表示当前元素为相对定位 */
+
+h1 {
+    position: relative;
+    left: 100px;
+}
+
+/* CSS的绝对定位：
+- position属性的值设置为absolute，表示当前元素为绝对定位
+- 如果元素的父元素是<body>的话，绝对定位会相对于当前页面
+- 如果元素的父元素不是<body>标签，并且开定位的话，绝对定位会相对于父元素 */
+
+/* 什么是伪类选择器：
+- CSS伪类是在CSS选择器中添加关键字，指定匹配元素的特殊状态
+- hover伪类选择器用于用户鼠标悬停在链接文本内容上时的样式 */
+
+h1:hover {
+    color: red;
+}
+
+/* 什么是层级选择器：
+- 层级选择器就是指在标签嵌套结构中通过某个标签查找另一个标签的方式 */
+
+/* <div id="d1">
+<div id="d11">慕课网</div>
+</div> */
+
+/* 子级选择器的用法：
+- 层级选择器中最常用的是子级选择器的用法 */
+
+#d1 > #d11 {
+    color: red;
+}
+
+
+
