@@ -9,7 +9,8 @@
 // - 基于node.js,快速,开放,极简的web开发框架
 // - npm install express --save 安装express
 // - hello world 应用
-// - 监听路由和响应内容， 使用modemon自动重启 npm install -g nodemon
+// - 监听路由和响应内容， 使用nodemon自动重启 npm install -g nodemon
+// cd server, nodemon server.js
 
 //-------------------------------------------------------------------
 // hello world 应用，如下：
