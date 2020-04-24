@@ -2,10 +2,12 @@
 // 可持久存储
 // 支持多种数据结构
 // redis-cli =>通过这个commend进行数据库连接
-// 密码登录 
+// 密码登录  => 查看视频，比如设置port为6379，并设置密码为。。。。
 
-// set b 111 => OK
-// get b => "111"
+
+// terminal => redis-server
+// set b 111 => OK      通过set来设置某个key的值
+// get b => "111"       通过get来获取指定key的值
 // setex c 10 1 c这个key，值为1， 10秒钟后自动删除（过期）
 // gey c => 1
 // get c => nil (10秒后变为nil)
